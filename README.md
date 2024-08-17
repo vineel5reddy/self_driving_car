@@ -3,6 +3,13 @@
 
 
 ## Table of Contents
+
+## Overview
+
+In this project, we use deep neural networks and convolutional neural networks to clone driving behavior. The model is trained, validated and tested using Keras. The model outputs a steering angle to an autonomous vehicle. The autonomous vehicle is provided as a simulator. Image data and steering angles are used to train a neural network and drive the simulation car autonomously around the track.
+This project started with training the models and tweaking parameters to get the best performance on the track 
+The use of CNN for getting the spatial features and RNN for the temporal features in the image dataset makes this combination a great fit for building fast and lesser computation required neural networks. Substituting recurrent layers for pooling layers might reduce the loss of information and would be worth exploring in the future projects. 
+It is interesting to find the use of combinations of real world dataset and simulator data to train these models. Then I can get the true nature of how a model can be trained in the simulator and generalized to the real world or vice versa. There are many experimental implementations carried out in the field of self-driving cars and this project contributes towards a significant part of it. 
 ### Introduction
 
 - Problem Definition
@@ -650,43 +657,11 @@ model.save('model.h5')
 
 
 
-## Files
-
-The project contains the following files:
-- *SelfDrivingCar.py* (script used to create the model and train the model)
-- *drive.py* (script to drive the car - feel free to modify this file)
-- *driving_log.csv* (csv file from simulator - data)
-- *IMG* (folder) (folder with images from simulator - data)
-- *model.h5* (a trained Keras model)
-- *requirements.txt* (important requirements for project)
-- *SelfDrivingCar.ipynb* (full explanation in notebook)
-- *SelfDrivingCar.pdf* (full explanation in PDF)
-
-## Overview
-
-In this project, we use deep neural networks and convolutional neural networks to clone driving behavior. The model is trained, validated and tested using Keras. The model outputs a steering angle to an autonomous vehicle. The autonomous vehicle is provided as a simulator. Image data and steering angles are used to train a neural network and drive the simulation car autonomously around the track.
-This project started with training the models and tweaking parameters to get the best performance on the track 
-The use of CNN for getting the spatial features and RNN for the temporal features in the image dataset makes this combination a great fit for building fast and lesser computation required neural networks. Substituting recurrent layers for pooling layers might reduce the loss of information and would be worth exploring in the future projects. 
-It is interesting to find the use of combinations of real world dataset and simulator data to train these models. Then I can get the true nature of how a model can be trained in the simulator and generalized to the real world or vice versa. There are many experimental implementations carried out in the field of self-driving cars and this project contributes towards a significant part of it. 
 
 
-## References
 
-GitHub - [https://github.com/woges/UDACITY-self-driving-car/tree/master/term1_project3_behavioral_cloning](https://github.com/woges/UDACITY-self-driving-car/tree/master/term1_project3_behavioral_cloning)
 
-GitHub - [https://github.com/SakshayMahna/P4-BehavioralCloning](https://github.com/SakshayMahna/P4-BehavioralCloning)
 
-Deep Learning for Self-Driving Cars - [https://towardsdatascience.com/deep-learning-for-self-driving-cars-7f198ef4cfa2](https://towardsdatascience.com/deep-learning-for-self-driving-cars-7f198ef4cfa2)
-
-GitHub - [https://github.com/llSourcell/How_to_simulate_a_self_driving_car](https://github.com/llSourcell/How_to_simulate_a_self_driving_car)
-
-GitHub - [https://github.com/naokishibuya/car-behavioral-cloning](https://github.com/naokishibuya/car-behavioral-cloning)
-
-End to End Learning for Self-Driving Cars - [https://arxiv.org/pdf/1604.07316v1.pdf](https://arxiv.org/pdf/1604.07316v1.pdf)
-
-Aditya Babhulkar - [https://scholarworks.calstate.edu/downloads/fx719m76s](https://scholarworks.calstate.edu/downloads/fx719m76s)
-
-GitHub - [https://github.com/udacity/self-driving-car-sim](https://github.com/udacity/self-driving-car-sim)
 
 
 
