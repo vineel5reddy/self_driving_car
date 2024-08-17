@@ -1,4 +1,3 @@
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/91852182/147305077-8b86ec92-ed26-43ca-860c-5812fea9b1d8.gif)
 
 # SELF-DRIVING CAR USING UDACITY’S CAR SIMULATOR ENVIRONMENT AND TRAINED BY DEEP NEURAL NETWORKS 
 
@@ -649,31 +648,7 @@ Save model
 model.save('model.h5')
 ```
 
-## The Connection Part
 
-This step is required to run the model in the simulated car. For implementing web service using python, we need to install flask. We will use Anaconda environment. Flask is a python micro framework that is used to build the web app. We will use Visual Studio Code.
-
-![31](https://user-images.githubusercontent.com/91852182/147303011-116b5dbd-9892-490e-bc6f-b7644556243a.png)
-
-We will open the folder where we kept the saved .h5 file, then again open a file but before that, we will install some dependencies. We will also create an anaoconda environment too for doing our work. Click Create Python 3.8.12. with my experience I need to mention that i had some problems with environments, the was a lot of conflicts so I will advise you just to follow my steps exactly the same.
-
-![32](https://user-images.githubusercontent.com/91852182/147303041-3d9a12bb-e42a-4439-8e6d-549122a6e121.png)
-
-After we created new env on Python 3.8.12 moving to VScode and opening it under SDC environment. So basically, we now will work with special environment on special Python version. Terminal need to be as well under same.
-
-![34](https://user-images.githubusercontent.com/91852182/147303077-0761ce1c-b713-4237-97d3-d4e272e0adcf.png)
-
-![33](https://user-images.githubusercontent.com/91852182/147303069-3fa65901-85ae-49f0-a11c-bb10025936e5.png)
-
-I will create a list conda ```list -e &gt; requirements.txt``` requirements.txt for you to know what exactly I used there.  It important to use **keras 2.4.3** and be careful with **python-engineio=3.13.0** and lastly most important **python-socketio=4.6.1**(follow requirements.txt). As well you will see drive.py file without this code will not work you can simple copy paste it I will not go deep about this file. 
-
-Now when all your requirements are installed, we are ready to run magic code in terminal. In your folder you will see something like I show below.
-
-![35](https://user-images.githubusercontent.com/91852182/147303161-90c4b09a-a180-4c34-b695-b16a7388525e.png)
-
-Just type python ```drive.py model.h5``` in your Terminal.  wait few few second open Udacity Simulator and choose option Autonomous mode. That it, you will see something as I show below.
-
-![36](https://user-images.githubusercontent.com/91852182/147303194-84f45ca9-c61a-4c3d-b054-ec731e2fd79f.png)
 
 ## Files
 
